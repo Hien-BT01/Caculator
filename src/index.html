@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Caculator Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="caculator">
+      <div class="caculator-container">
+        <div class="output container-fluid">
+          <div class="operation">
+            <div class="value">0</div>
+          </div>
+          <div class="result">
+            <div class="value"></div>
+          </div>
+        </div>
+        <div class="input container-fluid h-100 pb-5 pt-5">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button active-angle">
+                  <div>Rad</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>Deg</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>√</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>X<span>2</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>(</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>)</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>C</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div><i class="fas fa-times-circle"></i></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>π</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>cos</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>sin</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>tan</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>7</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>8</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>9</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div class="operation-calc">÷</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>e</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>acos</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>asin</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>atan</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>4</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>5</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>6</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div class="operation-calc">×</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>x!</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>exp</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>Ln</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>Log</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>1</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>2</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>3</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div class="operation-calc">-</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>x<span>y</span></div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>ANS</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>%</div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 pb-4 pt-4 button">
+                  <div>.</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 pb-4 pt-4 button col-3">
+                  <div>0</div>
+                </div>
+                <div
+                  class="col-lg-6 col-md-6 equal pt-2 pb-2 d-flex justify-content-center button col-sm-6 col-6"
+                >
+                  <div>=</div>
+                </div>
+                <div class="col-lg-3 col-md-3 pb-4 pt-4 button col-sm-3 col-3">
+                  <div class="operation-calc">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modules/modules.js" type="module"></script>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>

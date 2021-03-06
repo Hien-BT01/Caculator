@@ -1,0 +1,55 @@
+.input{
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+    font-size: 1.6rem;
+    color: #333;
+    min-height: 25rem;
+    background-color: #fefefe;
+    border-radius: 0rem 0rem 3rem 3rem;
+    .button{
+        border-radius: 10px;
+        transition: all 0.5s linear;
+        cursor: pointer;
+        .operation-calc{
+            color: rgb(26, 205, 211);
+        }
+        i{
+            pointer-events: none;
+        }
+        &:hover{
+            background-color: rgba(34, 33, 32, 0.774);
+            color: #fefefe;
+        }
+    }
+
+    .equal{
+        justify-content: center;
+        div{
+            width: 80%;
+            color: #fefefe;
+            font-size: 1.8rem;
+            display: flex;  
+            align-items: center;
+            justify-content: center;
+            border-radius: 2rem;
+            height: 100%;
+            background-color: rgb(24, 221, 221);
+            transition: all 0.3s linear;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    span{
+        font-size: 1.2rem;
+        vertical-align: text-top;
+    }
+}
+
+.active-angle{
+    transition: all 0.3s linear;
+    background-color: rgb(34, 32, 32);
+    border-radius: 1rem;
+    color: #fefefe;
+}
